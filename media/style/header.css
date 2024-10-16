@@ -1,0 +1,49 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+header{
+    width: 100vw;
+    height: 5rem;
+    border: 2px solid black;
+}
+nav{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+}
+h1{
+    font-family: 'Larissoa';
+    font-weight: 200;
+}
+ul{
+    display: flex;
+    gap: 50px;
+}
+li,a{
+    text-decoration: none;
+    list-style: none;
+}
+.section-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+a{
+    color: black;
+    text-transform: uppercase;
+    font-family: 'Raleway';
+    transition: all 0.5s linear;
+    font-weight: 500;
+}
+@font-face {
+    font-family: "Larissoa";
+    src: url(../font/laviossa/Laviossa-Medium.otf);
+}
+a:hover{
+    opacity: 0.2;
+}
