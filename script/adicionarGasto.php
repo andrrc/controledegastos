@@ -6,9 +6,7 @@ if (isset($_POST['submit'])) {
     $observacao = $_POST['observacao'];
     $pago = $_POST['pago'];
     $quemPagou = $_POST['quemPagou'];
-    $quemPagouSegundo = $_POST['quemPagouSegundo'];
-    $quemPagouTerceiro = $_POST['quemPagouTerceiro'];
-    $result = mysqli_query($conexao, "INSERT INTO Terreno42(item,preco,observacoes,pago,quem_pagou,quemPagouSegundo,quemPagouTerceiro) VALUES('$item','$preco','$observacao','$pago','$quemPagou','$quemPagouSegundo','$quemPagouTerceiro')");
+    $result = mysqli_query($conexao, "INSERT INTO gastos(item,preco,observacoes,pago,quem_pagou,quemPagouSegundo,quemPagouTerceiro) VALUES('$item','$preco','$observacao','$pago','$quemPagou','$quemPagouSegundo','$quemPagouTerceiro')");
 }
 ;
 ?>
@@ -38,7 +36,7 @@ if (isset($_POST['submit'])) {
     <section class="section-formulario">
         <form method="POST" action="adicionarGasto.php">
             <div id="div-form-atributos">
-                <label for="Item">Item:</label>
+                <label for="Item">Serviço:</label>
                 <input type="text" name="item" id="item">
                 <label for="preco">Preço:</label>
                 <input type="number" name="preco" id="preco">
